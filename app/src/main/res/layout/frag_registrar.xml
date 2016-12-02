@@ -1,0 +1,207 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary_dark"
+            android:layout_marginBottom="5dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+
+                android:layout_marginBottom="5dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/person"
+                app:civ_border_width="0dp"
+                app:civ_border_color="@color/Titulos2"
+                android:id="@+id/navImg"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fab_add"
+                android:id="@+id/agregarImg"
+                android:layout_alignBottom="@id/navImg"
+                android:layout_alignEnd="@id/navImg"
+                style="@style/MgtFav"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rot_icon"
+                android:layout_centerInParent="true"
+                android:id="@+id/rotI"
+                android:layout_toEndOf="@id/navImg"/>
+
+        </RelativeLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <android.support.design.widget.TextInputEditText
+
+                android:id="@+id/txtNom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/txtApe"
+                android:singleLine="true"
+                android:hint="Nombre"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtApe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/txtCod"
+                android:singleLine="true"
+                android:hint="Apellido"
+                android:inputType="textPersonName"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <android.support.design.widget.TextInputEditText
+
+                android:id="@+id/txtCod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@+id/txtTelf"
+                android:singleLine="true"
+                android:hint="Código"
+                android:inputType="number"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <android.support.design.widget.TextInputEditText
+
+                android:id="@+id/txtTelf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:hint="Telefono"
+                android:inputType="number"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <EditText
+
+                    android:id="@+id/fecnac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="start"
+                    android:singleLine="true"
+                    android:focusable="false"
+                    android:hint="Fecha de nacimiento"
+                    android:inputType="none"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_marginTop="10dp"
+               android:gravity="bottom"
+               android:layout_gravity="bottom"
+               android:layout_height="match_parent"
+               android:background="#FFFFFF"
+
+               >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/btnGuardar"
+                android:background="@color/accent"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="Guardar"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/accent"
+                android:textColor="@android:color/white"
+                android:id="@+id/btnLimpiar"
+                android:layout_height="wrap_content" android:text="Limpiar"/>
+           </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+</FrameLayout>

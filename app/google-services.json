@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "813804660987",
+    "firebase_url": "https://biblioul-5f989.firebaseio.com",
+    "project_id": "biblioul-5f989",
+    "storage_bucket": "biblioul-5f989.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:813804660987:android:1e5cc5282095849d",
+        "android_client_info": {
+          "package_name": "pe.edu.ulima.biblioul"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "813804660987-c1iditl3bq182t9t5aol51jf1f0v67hg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pe.edu.ulima.biblioul",
+            "certificate_hash": "FF3103A867125F323F0AC780236C9F7AB4F68E3D"
+          }
+        },
+        {
+          "client_id": "813804660987-lh5gsk7h191c2m933jf8m3mp5bma409i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSuEOAJzW_7mcD9MmWmMBxrPqi65vpF6Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "813804660987-lh5gsk7h191c2m933jf8m3mp5bma409i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

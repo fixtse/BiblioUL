@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Biblioteca">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/m1"
+                    android:icon="@drawable/ic_one"
+                    android:title="Primero"/>
+
+                <item
+                    android:id="@+id/m2"
+                    android:icon="@drawable/ic_two"
+                    android:title="Segundo"/>
+            </group>
+        </menu>
+    </item>
+
+
+
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:icon="@drawable/ic_close"
+                    android:id="@+id/CSesion"
+                    android:title="Cerrar Sesión"/>
+            </group>
+
+
+</menu>
